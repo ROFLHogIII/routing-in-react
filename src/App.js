@@ -21,6 +21,7 @@ class App extends Component {
                         <Route exact path="/Home" />
                         <Route exact path="/Movies" component={MoviePage} />
                         <Route exact path="/People" component={PeoplePage} />
+                        <Route exact path="/Movies/:id" />
                     </Switch>
                 </Fragment>
             </Router>

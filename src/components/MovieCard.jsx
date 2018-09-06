@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 let MovieCard = (props) => (
     <React.Fragment>
@@ -9,7 +10,7 @@ let MovieCard = (props) => (
                 </div>
                 <div className="card-body text-dark">
                     <p className="card-text"> {props.movie.description}</p>
-                    <a href={props.person.url} className="btn btn-primary">View in Detail</a>
+                    <Link to={`/Movies/${props.movie.id}`} className="btn btn-primary">View in Detail</Link>
                 </div>
             </div>
         </div>
