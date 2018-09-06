@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
 import MoviePage from './components/MoviePage'
 import PeoplePage from './components/PeoplePage'
 import OneMovie from './components/OneMovie'
+import OnePerson from './components/OnePerson'
 import logo from "./assets/logo.png"
 
 class App extends Component {
@@ -23,6 +24,7 @@ class App extends Component {
                         <Route exact path="/Movies" component={MoviePage} />
                         <Route exact path="/People" component={PeoplePage} />
                         <Route exact path="/Movies/:id" component={OneMovie}/>
+                        <Route exact path="/People/:id" component={OnePerson}/>
                     </Switch>
                 </Fragment>
             </Router>
