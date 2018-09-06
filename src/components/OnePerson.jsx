@@ -3,7 +3,7 @@ import 'isomorphic-fetch';
 import 'es6-promise';
 
 
-const filmAPI = "https://ghibliapi.herokuapp.com/people/"
+const personAPI = "https://ghibliapi.herokuapp.com/people/"
 
 class OnePerson extends Component {
     constructor(props) {
@@ -17,7 +17,7 @@ class OnePerson extends Component {
 
     async componentDidMount() {
         try { //try this block of async code
-            let result1 = await fetch(filmAPI + this.props.match.params.id);
+            let result1 = await fetch(personAPI + this.props.match.params.id);
             let obj1 = await result1.json();
             await this.setState({ person: obj1 });
             console.log(this.state.person);
