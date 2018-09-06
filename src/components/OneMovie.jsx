@@ -26,7 +26,7 @@ class OneMovie extends Component {
                 <div className="col-md-3">
                     <div className="card border-dark mb-3">
                         <div className="card-header">
-                            <p>{this.state.movies.title}</p>
+                            <h1>{this.state.movies.title}</h1>
                         </div>
                         <div className="card-body text-dark">
                             <p className="card-text">Director: {this.state.movies.director}</p>
